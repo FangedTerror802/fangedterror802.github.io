@@ -15,8 +15,15 @@
   </head>
   <body>
     <canvas id="myCanvas"></canvas>
-    <script type="text/javascript" src="/js/bubbles.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/bubbles.js">
+    	var myName = "FangedTerror";
+	var white = [277, 277, 277];
+	var purple = [280, 50, 60];
+	var letterColors = [white, purple];
+	drawName(myName, letterColors);
+	if(10 < 3) {bubbleShape = 'square';} else {bubbleShape = 'circle';}
+	bounceBubbles();
+    </script>
     <audio autoplay="autoplay">
         <source src="/song.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
